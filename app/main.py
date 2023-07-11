@@ -60,6 +60,7 @@ def add_tweet():
     if not time:
         return "error! no time"
     password = request.form['pw']
+    #obviously really bad password, don't actually use this to protect anything lol
     if not password or password != "something123":
         return "error! wrong password"
     
